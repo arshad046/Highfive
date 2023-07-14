@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title> High five - heaven for thier framework</title>
+    <link rel="icon" type="image/.png" href="https://i.pinimg.com/originals/7f/8b/0d/7f8b0db85db24f0e736b83fdb580398e.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/highfive.html">Highfive</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">user interface</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">modules</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#SignUpModal">SignUp</button>
+
+            </div>
+    </nav>
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login to Highfive</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignUpModalLabel">Get An Highfive Account</h1>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/400x400/?technology\" class="d-block w-100 "
+                    style="height: 750px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to high five</h2>
+                    <p>Delivering Exceptional Service Solutions.</p>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-success">web devolpement</button>
+                    <button class="btn btn-danger">tech fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/400x400/?web devolpement" class="d-block w-100"
+                    style="height: 750px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Unlocking User Delight</h2>
+                    <p> Creating Engaging Interfaces for Memorable Experiences</p>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-success">web devolpement</button>
+                    <button class="btn btn-danger">tech fun</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/400x400/?prototype" class="d-block w-100" style="height: 750px;"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>User-Focused Interfaces</h2>
+                    <p>Bridging the Gap between People and Technology</p>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-success">web devolpement</button>
+                    <button class="btn btn-danger">tech fun</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container my-2 py-3">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0"> Exploring Global User Interfaces for a Connected Experience</h3>
+                        <div class="mb-1 text-body-secondary">July 13</div><br>
+                        <p class="card-text mb-auto">Worldly UI explores user interfaces designed to connect people
+                            across cultures, offering a seamless and inclusive experience for a global audience.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link" role="button"
+                            data-toggle="modal" data-target="#World">
+                            Continue reading
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <img class="bd-placeholder-img img-fluid" width="200" height="250"
+                            src="https://source.unsplash.com/500x700/?information architecture,user experience" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0"> Cultivating Cross-Cultural Design Principles for a Connected World</h3>
+                        <div class="mb-1 text-body-secondary">July 13</div><br>
+                        <p class="card-text mb-auto">Cultivating inclusive design principles that connect diverse
+                            cultures and resonate with a global audience.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link" role="button"
+                            data-toggle="modal" data-target="#Design">
+                            Continue reading
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <img class="bd-placeholder-img img-fluid" width="200" height="250"
+                            src="https://source.unsplash.com/400x400/?user interface,prototype" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-2 py-3">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-danger">Visual Design</strong>
+                            <h3 class="mb-0">The Art of Crafting Captivating and Harmonious Designs</h3>
+                            <div class="mb-1 text-body-secondary">July 13</div><br>
+                            <p class="card-text mb-auto">Applying visual aesthetics to the wireframes, including color
+                                schemes, typography, imagery, and other visual elements. This phase involves creating
+                                high-fidelity mockups and defining the visual style that aligns with the brand and
+                                target audience.</p>
+                            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link" role="button"
+                                data-toggle="modal" data-target="#Visual-Design">
+                                Continue reading
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <img class="bd-placeholder-img img-fluid" width="200" height="250"
+                                src="https://source.unsplash.com/400x400/?visual design,user research" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-secondary">wireframing</strong>
+                            <h3 class="mb-0">Streamlining User Experience through Wireframing and Information
+                                Architecture</h3>
+                            <div class="mb-1 text-body-secondary">July 13</div><br>
+                            <p class="card-text mb-auto"> Creating low-fidelity visual representations of the user
+                                interface, focusing on layout, placement of elements, and overall structure. Wireframes
+                                serve as a blueprint for the UI design and help visualize the user interaction.</p>
+                            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link" role="button"
+                                data-toggle="modal" data-target="#Wireframing">
+                                Continue reading
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <img class="bd-placeholder-img" width="200" height="250"
+                                src="https://source.unsplash.com/400x400/?wireframing" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="World" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="WorldLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="WorldLabel">World</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Welcome to "Worldly UI: Exploring Global User Interfaces for a Connected Experience." In
+                            today's increasingly interconnected world, user interfaces (UIs) play a pivotal role in
+                            bridging cultures and fostering meaningful connections. At [Company Name], we are dedicated
+                            to exploring the diverse landscape of global UI design to create seamless and inclusive
+                            experiences for users worldwide. Through our research and expertise, we delve into the
+                            complexities of cultural nuances, language diversity, and user preferences across different
+                            regions. We recognize that designing a successful UI goes beyond language translation and
+                            requires a deep understanding of local customs, context, and user behaviors. Our team of
+                            skilled UI designers and researchers combines cross-cultural knowledge with a user-centric
+                            approach to craft interfaces that resonate with diverse audiences.<br>
+
+                            With "Worldly UI," we aim to uncover innovative design approaches that transcend borders and
+                            create digital experiences that transcend language barriers. Our exploration extends to
+                            understanding the impact of cultural aesthetics, color symbolism, and visual metaphors on
+                            user perception and engagement. By embracing cultural diversity, we strive to create UI
+                            designs that evoke familiarity, inclusivity, and a sense of belonging for users around the
+                            globe.<br>
+
+                            Throughout our journey, we collaborate with clients and stakeholders to gain insights into
+                            their target markets and user demographics. We conduct user research, usability testing, and
+                            iterative design processes to ensure that our UI designs align with the needs, expectations,
+                            and cultural sensitivities of the intended audience. By focusing on empathy and human
+                            connection, we enable users to navigate seamlessly through interfaces, effortlessly interact
+                            with digital products, and forge meaningful connections regardless of geographical
+                            boundaries.<br>
+
+                            "Worldly UI: Exploring Global User Interfaces for a Connected Experience" represents our
+                            commitment to transcending cultural barriers and fostering a global community through
+                            well-crafted UI designs. Join us as we embark on this exciting journey of discovery, where
+                            technology and design converge to create inclusive and connected digital experiences that
+                            resonate with users worldwide.<br>
+
+                            [Highfive] - Where Culture Meets Technology for a Connected World.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Design" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="Design" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="Design">Design</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Welcome to "Cultivating Cross-Cultural Design Principles for a Connected World." In an
+                            increasingly interconnected global landscape, it is crucial to create design solutions that
+                            transcend cultural boundaries and foster inclusive experiences. At [Company Name], we are
+                            dedicated to exploring and cultivating cross-cultural design principles to promote
+                            connectivity and understanding in our digitally connected world.<br>
+
+                            Culture plays a significant role in shaping user behaviors, preferences, and expectations.
+                            Understanding and respecting cultural differences is key to designing interfaces that
+                            resonate with diverse audiences. Through extensive research, we dive deep into the
+                            intricacies of various cultures, embracing their unique values, customs, and aesthetics.<br>
+
+                            Our approach begins with a comprehensive exploration of cultural contexts, including
+                            language, symbols, colors, and visual metaphors. By acknowledging and integrating these
+                            elements into our design process, we aim to create UI solutions that evoke familiarity,
+                            establish trust, and engage users on a deeper level.<br>
+
+                            Cultivating cross-cultural design principles requires a collaborative effort. We actively
+                            engage with clients and stakeholders to gain insights into their target markets and user
+                            demographics. By incorporating diverse perspectives, we ensure that our design solutions are
+                            sensitive to cultural nuances and meet the needs of a global audience.<br>
+
+                            One of our key focuses is on developing empathy-driven design solutions. We strive to
+                            understand the challenges and aspirations of users from different cultural backgrounds. By
+                            empathizing with their unique perspectives, we can create interfaces that are intuitive,
+                            accessible, and meaningful to a wide range of users.<br>
+
+                            Iterative design processes and usability testing are integral to our approach. We
+                            continuously refine our designs based on user feedback, ensuring that the interfaces we
+                            create provide seamless experiences across cultures. Through testing and user validation, we
+                            gain valuable insights that inform our design decisions and drive continuous
+                            improvement.<br>
+
+                            As part of our commitment to a connected world, we actively engage in ongoing research and
+                            stay abreast of emerging design trends and technologies. By embracing the evolving digital
+                            landscape, we are able to create design solutions that adapt to changing user behaviors and
+                            preferences while upholding cross-cultural sensitivity.<br>
+
+                            "Cultivating Cross-Cultural Design Principles for a Connected World" represents our
+                            dedication to creating inclusive, culturally sensitive, and engaging interfaces. We believe
+                            that by leveraging the power of design, we can bridge cultural gaps, foster understanding,
+                            and contribute to a more connected and harmonious global society.<br>
+
+                            Join us in this exciting journey as we cultivate cross-cultural design principles and
+                            empower digital experiences that transcend borders.<br>
+
+                            [Higfive] - Connecting Cultures through Thoughtful Design.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Visual-Design" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="Visual-Design" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="Visual-Design">Visual Design</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Welcome to the world of "The Art of Crafting Captivating and Harmonious Designs." At
+                            [Highfive], we believe that design is not just about aesthetics; it's an art form that
+                            has the power to evoke emotions, inspire connections, and leave a lasting impact. With our
+                            expertise in crafting captivating and harmonious designs, we strive to create visual
+                            experiences that engage and delight users.<br>
+
+                            The art of design begins with understanding the unique essence of each project. We take the
+                            time to immerse ourselves in your brand, values, and objectives. By gaining a deep
+                            understanding of your vision, we can create designs that authentically reflect your identity
+                            and resonate with your target audience.<br>
+
+                            Captivating designs go beyond just catching the eye – they evoke curiosity, spark intrigue,
+                            and invite exploration. Our team of talented designers combines creativity, storytelling,
+                            and the latest design trends to create visually stunning interfaces that stand out in a
+                            crowded digital landscape. We carefully craft every element, from typography and color
+                            palettes to imagery and micro-interactions, to create a cohesive and captivating visual
+                            experience.<br>
+
+                            Harmony in design is all about achieving a balance between various design elements. We
+                            understand that balance is not just about symmetry, but also about creating a sense of flow,
+                            rhythm, and proportion. By employing principles such as hierarchy, spacing, and grid
+                            systems, we ensure that our designs are intuitive, user-friendly, and visually pleasing.
+                            Harmonious designs provide a seamless user experience, guiding users through interfaces with
+                            ease and clarity.<br>
+
+                            The art of crafting captivating and harmonious designs is a journey of exploration and
+                            iteration. We embrace an iterative design process, where we collaborate closely with our
+                            clients to gather feedback, make refinements, and optimize the design. Through continuous
+                            refinement, we strive for perfection, ensuring that our designs exceed expectations and
+                            achieve the desired impact.<br>
+
+                            At [Highfive], we are passionate about the art of design and the power it holds to
+                            create meaningful connections between brands and users. Our designs go beyond the surface –
+                            they tell stories, evoke emotions, and inspire action. We are committed to crafting
+                            captivating and harmonious designs that not only look beautiful but also deliver exceptional
+                            user experiences.<br>
+
+                            Join us in the world of "The Art of Crafting Captivating and Harmonious Designs," and let
+                            our expertise elevate your brand and engage your audience in a visually stunning
+                            journey.<br>
+
+                            [Highfive] - Where Artistry Meets User Experience.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Wireframing" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="Wireframing" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="Wireframing">Wireframing</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Welcome to the realm of streamlining user experience through wireframing and information
+                            architecture. At [Highfive], we understand the pivotal role that wireframing and
+                            information architecture play in creating intuitive and user-friendly interfaces. Through
+                            our expertise in these areas, we aim to optimize the user journey and enhance the overall
+                            user experience.<br>
+
+                            Wireframing serves as the foundation of the design process. It allows us to visualize the
+                            structure and layout of the interface, providing a blueprint for the final product. Our
+                            skilled team of designers meticulously creates wireframes that focus on simplicity, clarity,
+                            and ease of use. By strategically placing elements, defining navigation flows, and
+                            organizing content, we ensure that users can intuitively navigate through the interface and
+                            find what they need effortlessly.<br>
+
+                            Information architecture is the backbone of effective user experience design. It involves
+                            structuring and organizing information in a logical and hierarchical manner. Our experts
+                            excel in creating information architectures that are user-centric, meaning we carefully
+                            consider the user's mental model and expectations when organizing and categorizing content.
+                            By employing user research and user testing methodologies, we ensure that the information
+                            architecture aligns with user needs, enhances findability, and minimizes cognitive load.<br>
+
+                            Through wireframing and information architecture, we streamline the user experience,
+                            reducing friction and optimizing interactions. We take a holistic approach, considering both
+                            the macro and micro interactions within the interface. By designing seamless and intuitive
+                            user flows, we guide users through their journey, anticipating their needs, and providing
+                            them with a smooth and delightful experience.<br>
+
+                            Our wireframing and information architecture processes are highly collaborative. We work
+                            closely with our clients to gain insights into their business goals, user personas, and
+                            specific requirements. By understanding your unique context and target audience, we ensure
+                            that the wireframes and information architecture align with your brand and objectives.<br>
+
+                            At [Highfive], we are passionate about creating user experiences that are both visually
+                            appealing and highly functional. Our wireframing and information architecture expertise form
+                            the foundation for successful design, allowing us to create interfaces that are intuitive,
+                            efficient, and enjoyable to use.<br>
+
+                            Join us in streamlining the user experience through wireframing and information
+                            architecture, and let us optimize your digital interfaces for exceptional user satisfaction.<br>
+
+                            [Highfive] - Where User Experience Finds Its Flow.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="container">
+                <p class="float-right" style="direction: ltr; text-align: left;"><a href="#" _msttexthash="131729"
+                        _msthash="57">Back to Top</a></p>
+                <p _msttexthash="3139097" _msthash="58" style="direction: ltr; text-align: left;">© 2021–2023 Highfive,
+                    Inc. · <a href="/privacy policy.html" _istranslated="1">Privacy Policy</a> · <a
+                        href="/Terms of use.html" _istranslated="1">Terms of Use</a></p>
+            </footer>
+
+
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+                crossorigin="anonymous"></script>
+
+
+            <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+            <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
